@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devin Ergul — Portfolio</title>
+  <meta name="description" content="Portfolio of Devin Ergul — Managerial Economics student focused on real estate, analytics, and AI-driven projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind via Play CDN (works on GitHub Pages) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc', 400: '#818cf8',
+              500: '#6366f1', 600: '#4f46e5', 700: '#4338ca', 800: '#3730a3', 900: '#312e81'
+            }
+          },
+          boxShadow: {
+            soft: '0 8px 30px rgba(0,0,0,0.06)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    /* Subtle, classy gradient background */
+    .bg-grid {
+      background-image: radial-gradient(rgba(99,102,241,.15) 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 font-sans">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-extrabold tracking-tight text-xl">DE</a>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="#projects" class="hover:text-brand-600">Projects</a>
+        <a href="#experience" class="hover:text-brand-600">Experience</a>
+        <a href="#skills" class="hover:text-brand-600">Skills</a>
+        <a href="#education" class="hover:text-brand-600">Education</a>
+        <a href="#contact" class="hover:text-brand-600">Contact</a>
+      </nav>
+      <a href="#contact" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Get in touch</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-50/80 to-white"></div>
+    <div class="absolute inset-0 bg-grid opacity-40"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            Devin Ergul
+          </h1>
+          <p class="mt-4 text-lg text-slate-700 max-w-prose">
+            Managerial Economics @ UMass Amherst • Focused on real estate analytics, AI-driven research, and data-backed investment strategy.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="rounded-xl px-4 py-2 bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-soft">View projects</a>
+            <a href="https://github.com/arindude" target="_blank" rel="noopener" class="rounded-xl px-4 py-2 bg-white border border-slate-200 hover:border-brand-300 hover:shadow-soft">GitHub</a>
+            <a href="mailto:devin@example.com" class="rounded-xl px-4 py-2 bg-white border border-slate-200 hover:border-brand-300 hover:shadow-soft">Email</a>
+          </div>
+        </div>
+        <div class="md:justify-self-end">
+          <div class="relative w-full max-w-md mx-auto">
+            <div class="absolute -inset-2 bg-gradient-to-tr from-brand-400 to-brand-700 blur-2xl opacity-20 rounded-3xl"></div>
+            <div class="relative rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
+              <h2 class="text-xl font-bold">Quick Stats</h2>
+              <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                <li>• Street2Ivy / Fallon Co. real estate capstone</li>
+                <li>• AI Marketing Specialist @ Scale AI</li>
+                <li>• Property Manager (Amherst, MA)</li>
+                <li>• Researcher, Valente Center (Bentley)</li>
+              </ul>
+              <div class="mt-4 text-xs text-slate-500">Boston / Amherst, MA • Open to analyst roles: acquisitions, RE investment, CRE analytics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-end justify-between">
+        <h2 class="text-2xl md:text-3xl font-extrabold">Selected Projects</h2>
+        <a href="https://github.com/arindude" target="_blank" class="text-sm font-semibold text-brand-700 hover:underline">All repos →</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project Card Template (duplicate as needed) -->
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">SCP Case Study: U.S. Soft Drink Industry</h3>
+          <p class="mt-2 text-sm text-slate-700">Industry analysis using SCP framework with HHI/CR metrics, CPI-adjusted revenues, and firm conduct insights.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="rounded-full bg-slate-100 px-3 py-1">Python</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">Pandas</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">IO</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Report</a>
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Code</a>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">AI in Economics: Modeling Outcomes</h3>
+          <p class="mt-2 text-sm text-slate-700">Comparison of neural nets vs. regression on structured datasets; feature engineering and cross-validation.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="rounded-full bg-slate-100 px-3 py-1">Python</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">scikit-learn</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">ML</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="https://arindude.github.io/490AI_devin_ergul/" target="_blank">Demo</a>
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Notebook</a>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Real Estate Deal Analyzer</h3>
+          <p class="mt-2 text-sm text-slate-700">NOI, IRR, DCR, and sensitivity analysis tool for acquisitions underwriting; export-ready summaries.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="rounded-full bg-slate-100 px-3 py-1">Python</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">Excel/CSV</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">Finance</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Readme</a>
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Repo</a>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">EV Charging Ops Dashboard</h3>
+          <p class="mt-2 text-sm text-slate-700">KPI dashboard mock for Re-Volt Charging: station uptime, utilization, and revenue streams.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="rounded-full bg-slate-100 px-3 py-1">JS</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">Charts</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">Ops</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Live</a>
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Repo</a>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">MIT Antitrust: Tuition Regression</h3>
+          <p class="mt-2 text-sm text-slate-700">Econometric analysis with interpretation slides; variable significance, t-stats, and defense narrative.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="rounded-full bg-slate-100 px-3 py-1">Python</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">Stats</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">Slides</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Slides</a>
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Repo</a>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Portfolio Site (this page)</h3>
+          <p class="mt-2 text-sm text-slate-700">Static GitHub Pages site with Tailwind, accessible components, and clean design.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="rounded-full bg-slate-100 px-3 py-1">HTML</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">Tailwind</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1">UX</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sm font-semibold text-brand-700 hover:underline" href="#">Source</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Experience</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">AI Marketing Specialist — Scale AI</h3>
+          <p class="text-sm text-slate-600">2024 – Present</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-2">
+            <li>Built content workflows and QA guidelines for AI data tasks.</li>
+            <li>Analyzed performance metrics to improve task quality and throughput.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">Operations Intern — Re‑Volt Charging</h3>
+          <p class="text-sm text-slate-600">2024 – Present</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-2">
+            <li>Mapped site selection criteria and utilization projections for EV chargers.</li>
+            <li>Drafted ops SOPs and tracked uptime/utilization KPIs.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">Property Manager — Amherst, MA</h3>
+          <p class="text-sm text-slate-600">2023 – Present</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-2">
+            <li>Renovated and managed a student rental; screening, leases, compliance.</li>
+            <li>Optimized capex and cashflows; coordinated maintenance and vendors.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">Researcher — Valente Center (Bentley)</h3>
+          <p class="text-sm text-slate-600">2022 – 2023</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-2">
+            <li>Policy analysis on sanctions (CAATSA); macro indicators and trade flows.</li>
+            <li>Synthesized findings into a policy brief and presentation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Skills</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <h4 class="font-semibold">Analytics & Modeling</h4>
+          <p class="mt-2 text-slate-700">Python (pandas, scikit‑learn), Excel, regression, HHI/CR, sensitivity analysis</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <h4 class="font-semibold">Real Estate</h4>
+          <p class="mt-2 text-slate-700">Underwriting, NOI/IRR/DCR, market comps, lease drafting, compliance</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <h4 class="font-semibold">Web & Tools</h4>
+          <p class="mt-2 text-slate-700">Git/GitHub, HTML/CSS/JS, dashboards, GitHub Pages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Education</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6 text-sm">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5">
+          <h4 class="font-semibold">UMass Amherst — B.S. Managerial Economics</h4>
+          <p class="mt-1 text-slate-700">2023 – 2025 • Advanced Macro, IO, Quant Applied Econ, Business Stats, Marketing</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5">
+          <h4 class="font-semibold">Bentley University — Economics & Finance</h4>
+          <p class="mt-1 text-slate-700">2022 – 2023 • Valente Center Research</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Contact</h2>
+      <p class="mt-3 text-slate-700">Email me or connect on GitHub. Replace placeholders below with your real info before publishing.</p>
+      <div class="mt-6 flex flex-col md:flex-row items-center justify-center gap-3">
+        <a href="mailto:devin@example.com" class="rounded-xl px-5 py-3 bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-soft">devin@example.com</a>
+        <a href="https://github.com/arindude" target="_blank" class="rounded-xl px-5 py-3 bg-white border border-slate-200 hover:border-brand-300 hover:shadow-soft">github.com/arindude</a>
+      </div>
+      <p class="mt-6 text-xs text-slate-500">© <span id="year"></span> Devin Ergul. All rights reserved.</p>
+    </div>
+  </section>
+
+  <script>
+    // Set current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
